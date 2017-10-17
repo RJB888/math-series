@@ -19,12 +19,12 @@ def fibonacci(n):
     series = [0, 1]
     for i in range(2, n):
         series.append(series[i - 1] + series[i - 2])
-    return series[-1]
+    return series[-1], series
 
 
 def lucas(n):
     """Return the nth number in Lucas Numbes."""
-    if n == 0 or n == 1:
+    if n == 2 or n == 1:
         return n
     # num = 0
     series = [2, 1]
