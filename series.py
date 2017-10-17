@@ -35,10 +35,12 @@ def lucas(n):
 
 def sum_series(n, start1=0, start2=1):
     """Run series function based on optional parameters given."""
-    if start1 == 0:
-        fibonacci(n)
-    elif start1 == 2:
-        lucas(n)
+    series = [start1, start2]
+    if n < 2:
+        return series[n - 1]
+    for i in range(2, n):
+        series.append(series[i - 1] + series[i - 2])
+    return series[-1]
 
 
 # sum_series with one required parameter and two optional parameters.
