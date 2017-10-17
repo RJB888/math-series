@@ -13,10 +13,10 @@ Optional plotz says to frobnicate the bizbaz first.
 
 def fibonacci(n):
     """Calculate the fiboacci sequence given the nth place to calculate to."""
-    if n == 0 or n == 1:
-        return n
-    # num = 0
     series = [0, 1]
+    if n < 2:
+        return series[n - 1]
+    # num = 0
     for i in range(2, n):
         series.append(series[i - 1] + series[i - 2])
     return series[-1]
@@ -24,10 +24,10 @@ def fibonacci(n):
 
 def lucas(n):
     """Return the nth number in Lucas Numbes."""
-    if n == 2 or n == 1:
-        return n
-    # num = 0
     series = [2, 1]
+    if n < 2:
+        return series[n - 1]
+    # num = 0
     for i in range(2, n):
         series.append(series[i - 1] + series[i - 2])
     return series[-1]
