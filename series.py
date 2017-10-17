@@ -19,7 +19,7 @@ def fibonacci(n):
     series = [0, 1]
     for i in range(2, n):
         series.append(series[i - 1] + series[i - 2])
-    return series[-1], series
+    return series[-1]
 
 
 def lucas(n):
