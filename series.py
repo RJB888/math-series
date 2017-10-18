@@ -1,14 +1,7 @@
-"""Implements Fibonacci sequence and Lucas Numbers."""
+"""Implements Fibonacci sequence and Lucas Numbers.
 
-"""Return a foobang
-
-Optional plotz says to frobnicate the bizbaz first.
+and sum_series funcion.
 """
-
-# Fib
-# 0, 1, 1, 2, 3, 5, 8, 13, ...
-# Lucas
-# 2, 1, 3, 4, 7, 11, 18, 29, ...
 
 
 def fibonacci(n):
