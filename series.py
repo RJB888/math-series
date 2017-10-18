@@ -43,7 +43,12 @@ def sum_series(n, start1=0, start2=1):
     return series[-1]
 
 
-# sum_series with one required parameter and two optional parameters.
-# The required parameter will determine which element in the series to print.
-# The two optional parameters will have default values of 0 and 1 and will
-# determine the first two values for the series to be produced.
+if __name__ == "__main__":
+    print("This module defines functions that implement mathematical series.")
+    print("\nfibonacci(n): Returns the nth value in the fibonacci series.")
+    print("fibonacci(5): ", fibonacci(5))
+    print("\nlucas(n): Returns the nth value in the Lucas Numbers.")
+    print('lucas(5): ', lucas(5))
+    print("\nsum_series(n): Returns the nth value in a random series based on\
+the fibonacci calculations, and can take params for the initial 2 numbers.")
+    print("sum_series(5,10,2): ", sum_series(5, 10, 2))
